@@ -1,0 +1,17 @@
+
+{
+    "dockerFile": "${localWorkspaceFolder}/Dockerfile",
+    "context": "${localWorkspaceFolder}/",
+    "containerUser": "developer",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/code,type=bind",
+    "workspaceFolder": "/code",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cmake-tools",
+                "ms-vscode.cpptools",
+                "twxs.cmake"
+            ]
+        }
+    }
+}
